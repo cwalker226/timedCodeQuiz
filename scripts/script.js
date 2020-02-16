@@ -41,7 +41,6 @@ function showQuestion(){
         var divEl = document.createElement("div");
         divEl.setAttribute("id", i.toString());
         divEl.setAttribute("class", "badge");
-        // divEl.setAttribute("style", "background-color: purple; color: white; cursor: pointer;");
         divEl.textContent = i.toString() + ". " + quiz[questionNum][i];
         var breakEl = document.createElement("br");
         answerContainer.appendChild(divEl);
