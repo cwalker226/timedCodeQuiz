@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-left m-0 p-0">
+                <a href="highscores.html">View Highscores</a>
+            </div>
+            <div id="middle" class="col-6 pt-5">
+                <h2 id="question">Question</h2>
+                <br>
+                <div id="answerContainer" class="container"></div>
+                <div id="recordScore" style="display: none;">
+                    <p>Your score is: <span id="score">0</span></p>
+                    <form id="submitScore" class="form-inline">
+                        <div class="form-group mb-2">
+                            <label for="initials" class="col-form-label">Enter initials: </label>
+                            <input type="text" class="form-control" id="initials">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </form>
+                </div>
+                <hr id="rule">
+                <p id="response">Correct!</p>
+            </div>
+            <div class="col-3 text-right m-0 p-0">
+                <div>Time: <span id="time">0</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
